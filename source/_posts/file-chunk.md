@@ -1,6 +1,6 @@
 ---
 title: 通过File对象的slice()方法实现文件分片上传
-date: 2018-08-08 16:04:09
+date: 2018-08-07 16:04:09
 comment: true
 tags: [前端,javascript]
 categories: [前端,技术]
