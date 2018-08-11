@@ -137,7 +137,7 @@ hanabi:
     enable: false
     line_number: true
     includeDefaultColors: true
-    customColors: 
+    customColors: ["#000", "#666"]
 
 # Post License
 # You can specify the text you want to show in the end of your posts and pages, HTML tag is supported.
