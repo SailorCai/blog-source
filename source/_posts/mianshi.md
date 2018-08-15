@@ -133,7 +133,7 @@ for (var i=7; i<1000; i+=2) {
     if (check(i)) a.push(i);
 }
 // 输出
-return a;
+console.log(a);
 // 检查是否是质数
 function check(n){
     for (var i=0; i<a.length; i++) {
