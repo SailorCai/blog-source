@@ -120,7 +120,7 @@ function getMaxProfit(arr){
         maxPrice = Math.max(item, maxPrice);
         minPrice = Math.max(item, minPrice);
     });
-    return
+    return maxPrice-minPrice;
 };
 ```
 
