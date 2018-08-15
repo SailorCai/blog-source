@@ -108,7 +108,7 @@ b = a-b;
 a = a-b;
 ```
 
-__6、找出下一个所有项都是数值的数组项之间的最大差值__
+__6、找出一个所有项都是数值的数组项之间的最大差值__
 ```bash
 function getMaxProfit(arr){
     if(!arr instance of Array){
@@ -124,3 +124,23 @@ function getMaxProfit(arr){
 };
 ```
 
+__7、找出1-1000之间的所有质数__
+```bash
+var a = [2,3,5];
+// 循环检查每个数字
+for (var i=7; i<1000; i+=2) {
+    // 如果是质数，则加入列表
+    if (check(i)) a.push(i);
+}
+// 输出
+return a;
+// 检查是否是质数
+function check(n){
+    for (var i=0; i<a.length; i++) {
+        // 如果没有质因数，则返回 true
+        if (a[i] * a[i] > n) return true;
+        // 如果可以被某个质数整除，则返回 false
+        if (n % a[i] === 0) return false;
+    }
+}
+```
