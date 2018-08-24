@@ -120,11 +120,11 @@ function getMaxProfit(arr){
         maxPrice = Math.max(item, maxPrice);
         minPrice = Math.max(item, minPrice);
     });
-    return
+    return maxPrice-minPrice;
 };
 ```
 
-__7、找出1-1000之间的所有质数__
+__7、找出1-1000之间的所有质数__ 
 ```bash
 var a = [2,3,5];
 // 循环检查每个数字
