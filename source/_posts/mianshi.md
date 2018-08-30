@@ -43,7 +43,7 @@ function statistic(str) {
     var staObj = {};
     for(var i=0,l=str.lenght; i<l; i++){
         if(!staObj[str.charAt(i)]){
-            staObj[str.charAr(i)] = 1;
+            staObj[str.charAt(i)] = 1;
         }else{
             staObj[str.charAt(i)] += 1;
         };
@@ -118,7 +118,7 @@ function getMaxProfit(arr){
     var maxPrice = minPrice = 0;
     arr.forEach(function(item){
         maxPrice = Math.max(item, maxPrice);
-        minPrice = Math.max(item, minPrice);
+        minPrice = Math.min(item, minPrice);
     });
     return maxPrice-minPrice;
 };
