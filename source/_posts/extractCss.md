@@ -68,4 +68,4 @@ css中的url路径的确可以了，但是可以看到，控制台出现了更�
 配置好后run dev server或者build，就会看到css中的资源正确引入了。
 
 更多配置信息可以参考我之前的博客：[多页项目的webpack配置](https://blog.csdn.net/logan_LG/article/details/81110577)
-github仓库地址：https://github.com/SailorCai/muti-page-webpack
+github仓库地址：https://github.com/SailorCai/muti-page-webpack 
