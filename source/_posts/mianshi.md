@@ -43,7 +43,7 @@ function statistic(str) {
     var staObj = {};
     for(var i=0,l=str.lenght; i<l; i++){
         if(!staObj[str.charAt(i)]){
-            staObj[str.charAr(i)] = 1;
+            staObj[str.charAt(i)] = 1;
         }else{
             staObj[str.charAt(i)] += 1;
         };
@@ -80,6 +80,7 @@ function arrSort(arr){
 除此之外的快速排序其实使用的是递归，参考数组中某个元素的值，把小于它的元素放到左数组中，大于它的值放到右数组中，然后递归进行上一次左右数组的操作:
 ```bash
 function quickSort(arr) {
+    if (arr.length <= 1){return arr};
     var q = arr[0], leftarr = [], rightarr = [];
     for(var i = 1,l=arr.lenght; i<l;i++){
             if(arr[i]<q){
@@ -118,7 +119,7 @@ function getMaxProfit(arr){
     var maxPrice = minPrice = 0;
     arr.forEach(function(item){
         maxPrice = Math.max(item, maxPrice);
-        minPrice = Math.max(item, minPrice);
+        minPrice = Math.min(item, minPrice);
     });
     return maxPrice-minPrice;
 };

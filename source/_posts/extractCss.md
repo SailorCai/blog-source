@@ -19,8 +19,8 @@ new MiniCssExtractPlugin({
 也就是把独立出来的css文件放入dist下的css文件夹下
 然而，build之后发现css中引入的图片并没有正确引入，并且报错了：
 
-<img src="image" alt="">
-<img src="image2" alt="">
+<img src="Image.png" alt="">
+<img src="Image2.png" alt="">
 
 经过url-loader处理后的图片是导出到了 dist/img/ 目录下
 
@@ -32,11 +32,11 @@ new MiniCssExtractPlugin({
 
 在此之前我们先看看网上见得最多的解决方案，也就是在output的配置中加入一个 publicPath: '../' 配置，
 
-<img src="image3" alt="">
+<img src="Image3.png" alt="">
 
 我们按照这个配置编译看一下能否解决问题
 
-<img src="image4" alt="">
+<img src="Image4.png" alt="">
 
 css中的url路径的确可以了，但是可以看到，控制台出现了更多报错，并且css文件本身也不能正确引入了，因此这种方案在这种情况下是解决不了问题的。
 
