@@ -55,7 +55,7 @@ worker.postMessage(getValueToDecrypt());
 ```bash
 //注册用来接收主线程信息的处理程序
 onmessage = function (e) {
-    var valueToDecrypt = e.data;
+    var valueToDecrypt = e.data; 
     //这里实现解密功能
 
     //把值返回给主线程
